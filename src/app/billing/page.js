@@ -39,7 +39,7 @@ const Billing = () => {
       const itemtobebought = localStorage.getItem("item")
       setSelectedItem(JSON.parse(itemtobebought))
     } 
-  })
+  }, [])
 
   // State to manage the disabled state of the button
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);

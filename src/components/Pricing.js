@@ -7,6 +7,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ButtonGroup from "./ButtonGroup";
 import Link from "next/link";
+import { useRouter } from 'next/navigation'
 
 const Plan = ({ title }) => {
   return (
@@ -18,13 +19,14 @@ const Plan = ({ title }) => {
 };
 
 const PricingCard = ({ name, title, price, image, btnText, trail, titleOne, titleTwo, titleThree, titleFour }) => {
+  const router = useRouter()
   const purchase = (name, price) => {
     const product = {
       name,
       price,
     }
     localStorage.setItem("item", JSON.stringify(product))
-    window.history.back()
+    router.push("/billing") 
   }
   return (
     <div className="mx-2 md:mx-3 cursor-pointer p-10 transition-all hover:shadow-lg flex flex-col gap-12 rounded-3xl border-neutral-200 border">

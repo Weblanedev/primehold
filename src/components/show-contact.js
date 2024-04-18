@@ -1,12 +1,12 @@
 import { Player } from "@lottiefiles/react-lottie-player";
 import { Modal } from "./modal";
 import { useEffect, useRef } from "react";
-import { Link } from "next/link";
+import Link from "next/link";
 
-const ShowContactModal = (props) => {
+const ShowOrderModal = (props) => {
   const { toggle, show } = props;
 
-  const playerRef = useRef<Player>(null);
+  const playerRef = useRef(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -40,19 +40,14 @@ const ShowContactModal = (props) => {
           />
         </div>
 
-        {/* <img
-          src="https://uxwing.com/wp-content/themes/uxwing/download/checkmark-cross/confirm-icon.png"
-          alt=""
-          className="w-[100px] h-[100px] object-contain mb-5"
-        /> */}
         <div className=" flex flex-col text-center justify-center items-center gap-4">
-          <h1 className="text-[32px] leading-10 text-black font-medium">
+        <h1 className="text-[32px] leading-10 text-black font-medium">
             Your message has been sent successfully!
           </h1>
-          <p className="text-[15px] font-medium text-[#9CA3AF]">
+          <p className="text-[12px] font-medium text-[#9CA3AF]">
             Please
             <Link
-              to="/"
+              href="/"
               className=" underline underline-offset-2 cursor-pointer px-1"
             >
               click here
@@ -65,4 +60,4 @@ const ShowContactModal = (props) => {
   );
 };
 
-export default ShowContactModal;
+export default ShowOrderModal;

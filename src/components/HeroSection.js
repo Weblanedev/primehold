@@ -3,10 +3,10 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section
-      className="text-center flex flex-col gap-10 sm:gap-20 items-center justify-center h-full mt-28 sm:mt-32 md:mt-44"
+      className="text-center flex flex-col gap-10 sm:gap-20 items-center justify-center h-full mt-28 sm:mt-32 md:mt-0"
       id="home"
     >
-      <div className="md:w-2/3 lg:w-1/2 container px-5 md:px-16 mx-auto">
+      <div className="md:w-2/3 lg:w-full container px-5 md:px-16 mx-auto">
         <h1 className="capitalize flex flex-col gap-2 md:gap-5 text-3xl sm:text-4xl md:text-[4rem] 2xl:text-5xl font-bold">
           <p>Urban Oasis for Construction</p>
           <p>and General Goods</p>

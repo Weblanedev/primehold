@@ -25,8 +25,11 @@ const Navbar = () => {
   }, []);
 
   const scroll = (id) => {
+    router.push("/")
    const element = document.getElementById(id);
-    element.scrollIntoView();
+    element?.scrollIntoView();
+    element?.scrollIntoView();
+    element?.scrollIntoView();
   }
 
   return (
@@ -37,7 +40,7 @@ const Navbar = () => {
     >
       <div className="container px-5 md:px-16 flex items-center justify-between mx-auto">
 
-        <h2 className="text-3xl" onClick={() => router.push("/")}>
+        <h2 className="text-3xl cursor-pointer" onClick={() => router.push("/")}>
           <span className="text-rose-600">C</span>ityStead.
         </h2>
 
@@ -55,7 +58,7 @@ const Navbar = () => {
             >
               <CloseOutlinedIcon />
             </button>
-            {["home", "services", "pricing",].map((link) => (
+            {["services", "pricing",].map((link) => (
               <li
                 key={link}
                 className={`capitalize border-b py-4 md:border-none md:py-0 hover:text-rose-600 cursor-pointer`}
@@ -64,7 +67,7 @@ const Navbar = () => {
                   scroll(link)
                 }}
               >
-                <p >{link}</p>
+                <Link href={`#${link}`}>{link}</Link>
               </li>
             ))}
             <li

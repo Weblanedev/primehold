@@ -135,7 +135,7 @@ const Contact = () => {
               <textarea
                 id="message"
                 rows={7}
-                className="block p-[15px] w-full text-sm text-gray-900 border rounded-md border-gray-300"
+                className="block p-[15px] w-full text-sm text-gray-900 border rounded-md border-gray-300 placeholder:text-rose-500"
                 placeholder="Your Message"
                 value={message}
                 onChange={handleMessageChange}
@@ -165,7 +165,7 @@ const Contact = () => {
                 Call Us
               </h4>
               <p className="text-rose-500 leading-[16px]">
-                +234-818-566-4805
+                +234-908-519-4457
               </p>
             </div>
           </div>
@@ -176,7 +176,7 @@ const Contact = () => {
                 Mail Us
               </h4>
               <p className="text-rose-500 leading-[16px]">
-              support@bronzetent.com
+              Support@citysteadops.com
               </p>
             </div>
           </div>

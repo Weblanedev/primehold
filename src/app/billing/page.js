@@ -10,7 +10,6 @@ const Billing = () => {
   const [selectedItem, setSelectedItem] = useState({
     name: "",
     price: "",
-    image: ""
   });
   useEffect(() => {
     window.scrollTo({
@@ -148,7 +147,7 @@ const Billing = () => {
               <textarea
                 id="message"
                 rows={7}
-                className="block p-[15px] w-full text-sm text-gray-900 border border-gray-300 rounded-md"
+                className="block p-[15px] w-full text-sm text-gray-900 border border-gray-300 rounded-md placeholder:text-rose-500"
                 placeholder="Your Message"
               ></textarea>
             </div>
@@ -360,7 +359,7 @@ const Billing = () => {
               your experience throughout this website, and for other purposes
               described in our{" "}
               <Link
-                href="/privacy-policy"
+                href="/"
                 className="text-[#a20401] cursor-pointer"
               >
                 privacy policy.

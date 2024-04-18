@@ -17,37 +17,7 @@ const Footer = () => {
         
           </div>
 
-          <div className="grid gap-8 lg:col-span-2 grid-cols-2 md:grid-cols-4">
-            <div>
-              <p className="font-medium">Company</p>
-              <nav className="flex flex-col mt-4 space-y-2 text-sm">
-                <Link
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  About
-                </Link>
-                <Link
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Meet the Team
-                </Link>
-                <Link
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  History
-                </Link>
-                <Link
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Careers
-                </Link>
-              </nav>
-            </div>
-     
+          <div className="grid gap-8 lg:col-span-2 grid-cols-2 md:grid-cols-4">   
             <div>
               <p className="font-medium">Helpful Links</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm ">
@@ -73,18 +43,6 @@ const Footer = () => {
                   className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
                 >
                   Terms &amp; Conditions
-                </Link>
-                <Link
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Returns Policy
-                </Link>
-                <Link
-                  href="/"
-                  className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit"
-                >
-                  Accessibility
                 </Link>
               </nav>
             </div>

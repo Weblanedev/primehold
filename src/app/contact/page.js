@@ -187,7 +187,7 @@ const Contact = () => {
                 Address
               </h4>
               <p className="text-rose-500 leading-normal">
-                Lagos, Nigeira
+                Block 67, Spring Bay Estate, Plot 14 Admiral Gabriel Okoi Street, Ikate, Lekki, Lagos
               </p>
             </div>
           </div>

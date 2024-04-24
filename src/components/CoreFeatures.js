@@ -25,7 +25,7 @@ const CoreFeatures = () => {
       <div className="flex-1 relative w-full">
         <div className="md:before:w-full md:before:h-full md:before:absolute md:before:-bottom-24 lg:before:-bottom-20 xl:before:-right-5 lg:before:-right-12 md:before:-right-16 md:before:bg-right-bottom md:before:bg-contain md:before:bg-no-repeat before:-z-50 before:bg-none md:before:bg-[url('/videobg.png')]">
           <Image
-            src={"/features/core-features.png"}
+            src={"https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
             width={300}
             height={300}
             alt="core features"

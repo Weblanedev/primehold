@@ -176,7 +176,7 @@ const Contact = () => {
                 Mail Us
               </h4>
               <p className="text-amber-800 leading-[16px]">
-              Support@citysteadops.com
+              Support@Primeholdops.com
               </p>
             </div>
           </div>

@@ -78,8 +78,8 @@ const Pricing = () => {
       id="pricing"
     >
       <div>
-        <span className="service-name text-center ">Citystead Pricing Plans</span>
-        <h2 className="title text-center xl:w-[60%] xl:mx-auto">At Citystead, we offer flexible pricing plans tailored to meet the diverse needs and budgets of our clients.</h2>
+        <span className="service-name text-center ">Primehold Pricing Plans</span>
+        <h2 className="title text-center xl:w-[60%] xl:mx-auto">At Primehold, we offer flexible pricing plans tailored to meet the diverse needs and budgets of our clients.</h2>
       </div>
 
       <div className="relative transition-all flex gap-1 mx-auto w-fit bg-slate-100 p-2 rounded-full">

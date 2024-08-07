@@ -38,7 +38,7 @@ const Services = () => {
         <div className="flex gap-5 md:gap-10 flex-col flex-1">
           <div className="flex flex-col gap-4">
             <span className="service-name text-center lg:text-left">
-            Why Choose Citystead?
+            Why Choose Primehold?
             </span>
             <h2 className="text-3xl md:text-5xl font-bold text-center lg:text-left">
               Business Goals Achieved with Design

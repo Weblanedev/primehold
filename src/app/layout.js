@@ -5,8 +5,22 @@ import ThemeProvider from "@/components/ThemeProvider";
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
 export const metadata = {
-  title: "CityStead",
-  description: "Whether you're revitalizing your home, building your business, or simply seeking quality goods for everyday living, Citystead has you covered.",
+  title: "Primehold",
+  description: "Discover Our Exclusive Collection of Premium Furniture",
+  icons: {
+    icon: [
+      {
+        media: '(prefers-color-scheme: light)',
+        url: 'https://i.pinimg.com/originals/73/9a/d4/739ad4f69b21ba2d2e0dc927a31e22eb.png',
+        href: 'https://i.pinimg.com/originals/73/9a/d4/739ad4f69b21ba2d2e0dc927a31e22eb.png',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: 'https://i.pinimg.com/originals/73/9a/d4/739ad4f69b21ba2d2e0dc927a31e22eb.png',
+        href: 'https://i.pinimg.com/originals/73/9a/d4/739ad4f69b21ba2d2e0dc927a31e22eb.png',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

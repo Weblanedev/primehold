@@ -9,10 +9,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <Link href={"/"} className="text-3xl">
-              <span className="text-rose-600">C</span>ityStead.
+              <span className="text-amber-800">P</span>rimehold.
             </Link>
             <p className="max-w-xs mt-4 text-sm">
-            Whether you're revitalizing your home, building your business, or simply seeking quality goods for everyday living, Citystead has you covered.
+            Whether you're revitalizing your home, building your business, or simply seeking quality goods for everyday living, we have you covered.
             </p>
         
           </div>

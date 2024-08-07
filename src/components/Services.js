@@ -28,7 +28,7 @@ const Services = () => {
       <div className="flex gap-10 items-center flex-col-reverse lg:flex-row">
         <div className="relative w-full flex-1">
           <Image
-            src="https://images.pexels.com/photos/5466276/pexels-photo-5466276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://images.pexels.com/photos/2138126/pexels-photo-2138126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             width={500}
             height={500}
             alt="video banner"

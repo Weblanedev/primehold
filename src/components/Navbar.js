@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="container px-5 md:px-16 flex items-center justify-between mx-auto">
 
         <h2 className="text-3xl cursor-pointer" onClick={() => router.push("/")}>
-          <span className="text-rose-600">C</span>ityStead.
+          <span className="text-amber-800">P</span>rimehold
         </h2>
 
         <div>
@@ -52,7 +52,7 @@ const Navbar = () => {
             {["services", "pricing",].map((link) => (
               <li
                 key={link}
-                className={`capitalize border-b py-4 md:border-none md:py-0 hover:text-rose-600 cursor-pointer`}
+                className={`capitalize border-b py-4 md:border-none md:py-0 hover:text-amber-800 cursor-pointer`}
                 onClick={() => {
                   setSelectedItem(link)
                 }}
@@ -62,7 +62,7 @@ const Navbar = () => {
             ))}
             <li
               className={`
-                capitalize border-b py-4 md:border-none md:py-0 hover:text-rose-600`}
+                capitalize border-b py-4 md:border-none md:py-0 hover:text-amber-800`}
 
             >
               <Link href={`/contact`}>Contact</Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-2 sm:gap-4 md:gap-2 lg:gap-4">
-          <button className="capitalize text-sm sm:text-base border-2 hover:border-2 font-semibold sm:py-3 py-2 px-3 sm:px-6 text-rose-600 border-rose-600 hover:border-rose-600 hover:bg-rose-600 hover:text-white rounded-full">
+          <button className="capitalize text-sm sm:text-base border-2 hover:border-2 font-semibold sm:py-3 py-2 px-3 sm:px-6 text-amber-800 border-amber-800 hover:border-amber-800 hover:bg-amber-800 hover:text-white rounded-full">
             <Link href={"/contact"}>Get Started</Link>
           </button>
         </div>

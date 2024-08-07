@@ -24,11 +24,11 @@ const Billing = () => {
     const numericalPart = parseFloat(input?.replace(/[^\d.]/g, ""));
 
     // Adding 100 to the numerical part
-    const result = numericalPart + 105;
+    const result = numericalPart + 110000;
 
     // Formatting the result back to the original format
     const formattedResult = result.toFixed(2);
-    const output = `$${formattedResult}`;
+    const output = `₦${formattedResult}`;
 
     return output;
   }
@@ -114,13 +114,13 @@ const Billing = () => {
               <div className="flex flex-col w-full gap-5 md:flex-row">
                 <input
                   type="text"
-                  className="border border-gray-300 text-gray-900 text-[15px] block w-full p-[15px] rounded-md"
+                  className="border border-gray-300 text-gray-900 text-[15px] block w-full p-[15px] rounded-md placeholder:text-amber-800"
                   placeholder="First Name"
                   required
                 />
                 <input
                   type="text"
-                  className="border border-gray-300 text-gray-900 text-[15px] block w-full p-[15px] rounded-md"
+                  className="border border-gray-300 text-gray-900 text-[15px] block w-full p-[15px] rounded-md placeholder:text-amber-800"
                   placeholder="Last Name"
                   required
                 />
@@ -128,14 +128,14 @@ const Billing = () => {
 
               <input
                 type="text"
-                className="border border-gray-300 text-gray-900 text-[15px] block w-full p-[15px] rounded-md"
+                className="border border-gray-300 text-gray-900 text-[15px] block w-full p-[15px] rounded-md placeholder:text-amber-800"
                 placeholder="Phone"
                 required
               />
 
               <input
                 type="email"
-                className="border border-gray-300 text-gray-900 text-[15px] block w-full p-[15px] rounded-md"
+                className="border border-gray-300 text-gray-900 text-[15px] block w-full p-[15px] rounded-md placeholder:text-amber-800"
                 placeholder="Email Address"
                 required
               />
@@ -147,7 +147,7 @@ const Billing = () => {
               <textarea
                 id="message"
                 rows={7}
-                className="block p-[15px] w-full text-sm text-gray-900 border border-gray-300 rounded-md placeholder:text-rose-500"
+                className="block p-[15px] w-full text-sm text-gray-900 border border-gray-300 rounded-md placeholder:text-amber-800"
                 placeholder="Your Message"
               ></textarea>
             </div>
@@ -155,7 +155,7 @@ const Billing = () => {
         </div>
 
         <div className="flex flex-col gap-[15px] items-start w-full justify-center">
-          <h4 className="font-bold text-[#a20401] leading-[28px]">
+          <h4 className="font-bold text-amber-800 leading-[28px]">
             YOUR ORDER
           </h4>
 
@@ -173,7 +173,7 @@ const Billing = () => {
                 {selectedItem?.name}
               </h4>
               <h4 className="text-[#161616] font-medium text-[16px]">
-                ${selectedItem?.price}
+                ₦{selectedItem?.price}.00
               </h4>
             </div>
             <div className="flex items-center justify-between py-[15px] w-full border-b">
@@ -181,7 +181,7 @@ const Billing = () => {
                 Labor service charge
               </h4>
               <h4 className="text-[#161616] font-medium text-[16px]">
-                $100.00
+                ₦100,000.00
               </h4>
             </div>
             <div className="flex items-center justify-between py-[15px] w-full border-b">
@@ -189,12 +189,12 @@ const Billing = () => {
                 Processing Fee
               </h4>
               <h4 className="text-[#161616] font-medium text-[16px]">
-                $5.00
+                ₦10,000.00
               </h4>
             </div>
             <div className="flex items-center justify-between py-[15px] w-full border-b">
               <h4 className="text-[#707070] font-medium text-[13px]">TOTAL</h4>
-              <h4 className="text-[#a20401] font-medium text-[16px]">
+              <h4 className="text-amber-800 font-medium text-[16px]">
                 {add100Dollars(selectedItem?.price)}
               </h4>
             </div>
@@ -339,7 +339,7 @@ const Billing = () => {
               based on service demand. It may be lesser or higher.
             </p>
 
-            <h4 className="font-bold text-[#a20401] mt-[20px] leading-[28px]">
+            <h4 className="font-bold text-amber-800 mt-[20px] leading-[28px]">
               PAYMENT METHODS
             </h4>
 
@@ -360,7 +360,7 @@ const Billing = () => {
               described in our{" "}
               <Link
                 href="/"
-                className="text-[#a20401] cursor-pointer"
+                className="text-amber-800 cursor-pointer"
               >
                 privacy policy.
               </Link>
@@ -370,7 +370,7 @@ const Billing = () => {
               type="submit"
               disabled={isButtonDisabled}
               onClick={handleSubmit}
-              className={`group gap-[8px] mt-[30px] w-[100%] text-center text-[16px] sm:text-[24px] rounded-full font-body bg-white text-rose-600 ${!isButtonDisabled && 'hover:bg-rose-600 hover:text-white'} px-[30px] sm:px-[97px] py-[15px] sm:py-[21px] border border-rose-400 transition-one`}>
+              className={`group gap-[8px] mt-[30px] w-[100%] text-center text-[16px] sm:text-[24px] rounded-full font-body bg-white text-amber-800 ₦{!isButtonDisabled && 'hover:bg-amber-800 hover:text-white'} px-[30px] sm:px-[97px] py-[15px] sm:py-[21px] border border-amber-800 transition-one`}>
               Place Order
             </button>
           </form>

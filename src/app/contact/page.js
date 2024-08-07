@@ -135,7 +135,7 @@ const Contact = () => {
               <textarea
                 id="message"
                 rows={7}
-                className="block p-[15px] w-full text-sm text-gray-900 border rounded-md border-gray-300 placeholder:text-rose-500"
+                className="block p-[15px] w-full text-sm text-gray-900 border rounded-md border-gray-300 placeholder:text-amber-800"
                 placeholder="Your Message"
                 value={message}
                 onChange={handleMessageChange}
@@ -144,7 +144,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="text-base font-medium text-white bg-rose-400 rounded-md px-7 md:px-12 py-[15px] hover:bg-rose-600 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-rose-400"
+                className="text-base font-medium text-white bg-rose-400 rounded-md px-7 md:px-12 py-[15px] hover:bg-amber-800 flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-rose-400"
                 onClick={toggleShowContactModal}
                 disabled={isButtonDisabled}
               >
@@ -164,7 +164,7 @@ const Contact = () => {
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Call Us
               </h4>
-              <p className="text-rose-500 leading-[16px]">
+              <p className="text-amber-800 leading-[16px]">
                 +234-908-519-4457
               </p>
             </div>
@@ -175,7 +175,7 @@ const Contact = () => {
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Mail Us
               </h4>
-              <p className="text-rose-500 leading-[16px]">
+              <p className="text-amber-800 leading-[16px]">
               Support@citysteadops.com
               </p>
             </div>
@@ -186,7 +186,7 @@ const Contact = () => {
               <h4 className="text-[24px] leading-[24px] font-medium">
                 Address
               </h4>
-              <p className="text-rose-500 leading-normal">
+              <p className="text-amber-800 leading-normal">
                 Block 67, Spring Bay Estate, Plot 14 Admiral Gabriel Okoi Street, Ikate, Lekki, Lagos
               </p>
             </div>

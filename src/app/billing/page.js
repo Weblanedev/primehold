@@ -28,7 +28,7 @@ const Billing = () => {
 
     // Formatting the result back to the original format
     const formattedResult = result.toFixed(2);
-    const output = `₦${formattedResult}`;
+    const output = `₦${formattedResult.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
 
     return output;
   }
